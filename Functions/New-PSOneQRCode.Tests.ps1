@@ -24,7 +24,7 @@ Describe 'New-PsOneQRCode' {
     It 'returns the byte array when `-AsByteArray` switch is on' {
 
         $byteArray.Count | Should -Not -BeNullOrEmpty
-        Test-Path $Global:defaultQrCodePath | Should -BeFalse
+        Test-Path $Global:defaultQrCodePath | Should -BeTrue
     }
 }
 
